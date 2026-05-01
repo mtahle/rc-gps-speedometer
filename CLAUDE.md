@@ -4,12 +4,12 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project
 
-RC car GPS speedometer firmware for AI-Thinker A7/A9G (GPS+GPRS, RDA8955 MIPS SoC). No ESP or other MCU — A7/A9G is the only processor.
+RC car GPS speedometer firmware for AI-Thinker A9G (GPS+GPRS, RDA8955 MIPS SoC). No host MCU — A9G is the only processor.
 
 **This repo contains only:** firmware source (`src/`), build script, CLAUDE.md, README.md, and build outputs (`builds/`, `releases/`).
 
 **SDK location (external, not in repo):** `~/workspace/AI-Thinker/GPRS_C_SDK/`
-**Toolchain:** Docker `neucrack/gprs_build` (macOS — native toolchain in `~/workspace/AI-Thinker/a9g-sdk-ception/` is Windows-only `.exe` files)
+**Toolchain:** Docker `neucrack/gprs_build` (macOS — native CSDTK in `~/workspace/AI-Thinker/a9g-sdk-ception/` is Windows-only)
 
 ---
 

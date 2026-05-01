@@ -1,6 +1,6 @@
 # RC GPS Speedometer
 
-GPS speedometer firmware for the AI-Thinker A7/A9G (GPS+GPRS module, RDA8955 MIPS SoC). Designed for RC car speed analysis.
+GPS speedometer firmware for the AI-Thinker A9G (GPS+GPRS module, RDA8955 MIPS SoC). Designed for RC car speed analysis.
 
 **Current stage:** POC — reads GPS, outputs speed in km/h over serial.
 
@@ -11,7 +11,7 @@ GPS speedometer firmware for the AI-Thinker A7/A9G (GPS+GPRS module, RDA8955 MIP
 ### Prerequisites
 
 - AI-Thinker A7 or A9G module (GPS+GPRS, two antennas)
-- USB-serial adapter (3.3V) connected to A7/A9G UART0
+- USB-serial adapter (3.3V) connected to A9G UART0
 - Docker Desktop (for building on macOS/Linux)
 - [Coolwatcher](https://github.com/Ai-Thinker-Open/GPRS_C_SDK) (for flashing — Windows GUI or run via Wine)
 - `gh` CLI (for GitHub operations)

@@ -1,0 +1,17 @@
+As the A9G module comes with an inbuilt bootloader and hence it can be controlled using AT commands and can also be used to transmit commands as well. Some useful AT commands are:-
+
+AT+GPS=1: This command is used to enable GPS. When this command is sent the GPS is turned On and the LED on module for GPS starts blinking.
+AT+GPS=0: This command is used to turn OFF GPS. After sending this command GPS is turned OFF and LED also stops blinking
+AT+GPSRD=1: This command is used to start reading GPS data and display it on the monitor. The data returned by this command is in NMEA format which needs to be converted to get into a readable form.
+AT+GPSRD=0: This command is used to stop reading the GPS data.
+AT+LOCATION=1: This command is used to get location data through the LBS server. It displays the location information in the form of latitude and longitude.
+AT+GPSUPGRADE: Release GPS UART from A9’s CPU, then you can connect GPS UART directly to communicate with GPS.
+AT+CGPSPWR: This command is used for GPS Power Control. It is used to turn on or turn off the GPS Power supply
+AT+CGPSRST: This command resets GPS in COLD start mode or autonomy mode. AT+CGPSRST=0 resets GPS in cold start mode and command AT+CGPSRST=1 resets GPS in autonomy mode.
+AT+CREG?: This command is used to check whether we are registered to the network or not. If it shows 1,1 as a response then this means that we are registered and can move ahead.
+AT+CGATT: This command is similar to the CREG command. If its response is 1 then we are connected to the network.
+AT+CIPSTATUS: This command is used to check whether the IP is connected or Not. If its response is "INITIAL" then it means that we are connected. If it shows something else then there is some problem.
+AT+CGDCONT=1: This command is used to connect to the Internet. In this command, we need to specify the APN and IP as well in the format given as AT+CGDCONT=1, "IP", "www"
+AT+HTTPGET: This command is used to send an HTTP get request to any server link. Its format is AT+HTTPGET="server link".
+AT+CIPMODE: This is used for selecting TCP/IP application mode. '0' os non-transparent mode and '1' is the transparent mode.
+AT+CIPACK: This command checks the state of data transmission. It will return the amount of data sent, data acknowledged by the server, and data not confirmed by the server.

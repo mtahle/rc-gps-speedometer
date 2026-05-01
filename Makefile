@@ -22,7 +22,7 @@ build:
 flash:
 	@echo ""
 	@echo "Flash steps:"
-	@echo "  1. Connect USB-serial adapter to A7/A9G UART0"
+	@echo "  1. Connect USB-serial adapter to A9G UART0"
 	@echo "  2. Open: ~/workspace/AI-Thinker/a9g-sdk-ception/cooltools/coolwatcher"
 	@echo "  3. Profile: 8955"
 	@echo "  4. Flash programmer: ~/workspace/a9g/host_8955_flsh_spi32m_ramrun.lod"
