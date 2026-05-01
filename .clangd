@@ -1,0 +1,9 @@
+CompileFlags:
+  Add:
+    - -I../AI-Thinker/GPRS_C_SDK/include
+    - -I../AI-Thinker/GPRS_C_SDK/include/std_inc
+    - -I../AI-Thinker/GPRS_C_SDK/include/api_inc
+    - -I../AI-Thinker/GPRS_C_SDK/libs/gps/include
+    - -I../AI-Thinker/GPRS_C_SDK/libs/gps/minmea/src
+    - -DCHIP_8955
+    - -w
