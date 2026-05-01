@@ -1,0 +1,9 @@
+CompileFlags:
+  Add:
+    - -I./include
+    - -I./include/std_inc
+    - -I./include/api_inc
+    - -I./libs/gps/include
+    - -I./libs/gps/minmea/src
+    - -DCHIP_8955
+    - -w
